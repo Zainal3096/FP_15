@@ -19,25 +19,49 @@
     <style type="text/css">
       a {color:#000;}
       .hitam{color: #000;}
-    </style>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script> 
-        $(document).ready(function(){
-            $("#euf").click(function(){
-                $("#img1").animate({
-                    height: 'toggle'
-                });
-            });
-        });
-        </script>
+      .fm{
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+    <style type="text/css">
+      .but{
+        background-color: grey;
+        float: center;
+    
+        justify-content: center;
+        margin: 5px;
+
+      }
+      <style>
+        .tengah{
+        position: absolute;
+        margin-top: -100px;
+        margin-left: -200px;
+        left: 50%;
+        top: 50%;
+        width: 400px;
+        height: 220px;
+        background-color: grey;
+        text-align: left;
+        }
+      </style>
+
+    </style>
+      <style type="text/css">
+    
+      .bg-dangerx {
+        background-color: #ccc !important;
+      }
+    </style>
 
   </head>
 
   <body style="background:#ccc;">
 
     <!-- Navigation -->
-    <nav class="container-fluid navbar navbar-expand-lg navbar-transparent bg-transparent fixed-top" >
+    <nav class="navbar navbar-expand-lg navbar-transparent bg-dangerx fixed-top" >
       <div class="container-fluid">
         <!-- logo -->
         <a class="navbar-brand" href="#"><img src="img/ef.png" width="100"></a>
@@ -67,25 +91,69 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container-fluid">
+    <div class="container">
 
       <!-- Portfolio Item Heading -->
-      <h1 id="euf" class="my-4" style="text-align: center;">EUFORIA CAREER
+      <h1 class="my-4" style="text-align: center;">BOOK APPOINMENT
         <!-- <small>Secondary Text</small> -->
       </h1>
- 
-      <!-- Portfolio Item Row -->
-      <div class="row">
-
-        <div class="col-md-4">
+      <dir class="container-fluid">
+      <div align="center" class="tengah" >
+     
+        
+       <form>
+        <div class="form-group">
+          <label for="exampleInput">Your Name</label>
+          <input type="text" class="form-control" id="exampleInput" aria-describedby="Help" placeholder="Enter Name"  style="width: 400px">
           
-          <img id="img1" class="img-fluid" src="img/stiker.jpg"  alt="" style="box-shadow: 2px 2px 2px 2px #888888;border-radius:8px;width:260px;height:260px;margin-left: 113px">
         </div>
-        <div class="col-md-8">
-          <!-- <h3 class="my-3">Project Description</h3> -->
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+        <div class="form-group">
+          <label for="exampleInput">Phone Number</label>
+          <input type="Phone" class="form-control" id="" placeholder="Phone Number" style="width: 400px ">
         </div>
-
+        <div class="form-group">
+          <label for="exampleSelect1">Booking For</label>
+          <select class="form-control" id=""  style="width: 400px ">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleSelect1">Book Date</label>
+          <select class="form-control" id=""  style="width: 400px ">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleSelect1">Package</label>
+          <select class="form-control" id=""  style="width: 400px ">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <button type="submit" class="but " >Submit</button> &nbsp;&nbsp;
+        <button type="reset" class="but " value="Submit" >Cancel</button>
+        
+        
+      </form>
+       
+      
+      
+      
+      </div>
+      </dir>
+      <!-- Portfolio Item Row -->
+      
       </div>
       <!-- /.row -->
     </div>
@@ -112,7 +180,8 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
   </body>
 
 </html>
