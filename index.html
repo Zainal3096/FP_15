@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FP_15</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slide.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body style="background-image:url(&quot;assets/img/background.png&quot;);background-size:cover;">
-    <nav class="navbar navbar-dark navbar-expand-md" style="background-color:#000000;">
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top navigasi" style="background-color:#000000;">
         <div class="container-fluid"><a class="navbar-brand" href="#"><img src="assets/img/ef_logo_yellow.png" class="logo-yellow"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
@@ -23,8 +24,108 @@
         </div>
         </div>
     </nav>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <span class="img_book" style="font-weight:bold;">▶ BOOK YOUR SESSION</span>
+            <img src="assets/img/ss_baby.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/img/ss_wedding.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/img/ss_prewedding.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/img/ss_family.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/img/ss_graduation.png" style="width:100%">
+        </div>
+    </div>
+    <div class="indikaktor_slide" style="text-align:center;margin:25px;">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <div class="thumbs">
+        <div class="container">
+            <h2 class="d-flex title">Prewedding</h2>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="card-group">
+                <div class="card card-margin">
+                    <a href="gallery.html">
+                        <img class="img-fluid" src="assets/img/thumb_prewed1.png">
+                    </a>
+                </div>
+                <div class="card card-margin">
+                    <a href="gallery.html">
+                        <img class="img-fluid" src="assets/img/thumb_prewed2.png">
+                    </a>
+                </div>
+                <div class="card card-margin">
+                    <a href="gallery.html">
+                        <img class="img-fluid" src="assets/img/thumb_prewed3.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thumbs">
+        <div class="container">
+            <h2 class="d-flex title">Wedding Celebration</h2>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="card-group">
+                <div class="card card-margin"><a href="#"><img class="img-fluid" src="assets/img/thumb_weding2.png"></a></div>
+                <div class="card card-margin"><a href="#"><img class="img-fluid" src="assets/img/thumb_weding1.png"></a></div>
+                <div class="card card-margin"><a href="#"><img class="img-fluid" src="assets/img/thumb_weding3.png"></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="thumbs">
+        <div class="container">
+            <h2 class="d-flex title">Graduation</h2>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="card-group">
+                <div class="card card-margin" type="button"><a href="#"><img class="img-fluid" src="assets/img/thumb_graduation2.png"></a></div>
+                <div class="card card-margin"><a href="#"><img class="img-fluid" src="assets/img/thumb_graduation1.png"></a></div>
+                <div class="card card-margin"><a href="#"><img class="img-fluid" src="assets/img/thumb_graduation3.png"></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-center" style="padding:38px;"><button class="btn btn-secondary" type="button">SEE MORE</button></div>
+    <div class="container-fluid footer">
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container-fluid"><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse justify-content-start" id="navcol-2"
+                    style="margin-bottom:0px;">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:#717171;">About Us</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:#717171;">FAQ</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:#717171;">Euforia Career</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:#717171;">Product</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr style="width:97%;margin-top:0px;margin-bottom:7px;">
+        <div class="justify-content-end footer_ikon" style="margin-top:0px;margin-right:22px;">
+            <div><a href="#" class="icon-footer"><img src="assets/img/icon_whatsapp_white.png" class="icon-logo-footer"></a></div>
+            <div><a href="#" class="icon-footer"><img src="assets/img/icon_instagram_white.png" class="icon-logo-footer"></a></div>
+            <div><a href="#" class="icon-footer"><img src="assets/img/icon_facebook_white.png" class="icon-logo-footer"></a></div>
+            <div><a href="#" class="icon-footer"><img src="assets/img/icon_gmail_white.png" class="icon-logo"></a></div>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/slide.js"></script>
 </body>
 
 </html>
