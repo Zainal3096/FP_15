@@ -2,15 +2,14 @@ body {
   background-image:background.png;
   background-size:cover;
 }
-
 .title {
+  cursor: pointer;
   justify-content:center;
   align-content:center;
   color:rgb(91,91,91);
   padding:10px;
   margin-top: 1rem;
 }
-
 .circle-icon {
   background-color:#5b5b5b;
   width:100px;
@@ -106,16 +105,26 @@ hr {
     display:flex;
   }
 }
+.txt_link{
+  color: black;
+}
+.txt_link:hover{
+  color: black;
+  font-style: none;
+}
 
-.icon {
-  width:100px;
-  height:100px;
-  background-color:rgb(91,91,91);
-  border-radius:50px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin:50px;
+@media (min-width: 100px){
+  .icon {
+    width:80px;
+    height:80px;
+    background-color:rgb(91,91,91);
+    border-radius:50px;
+    display:flex;
+    position: relative;
+    justify-content:center;
+    align-items:center;
+    margin:50px;
+  }
 }
 
 .icon-logo {
@@ -126,7 +135,7 @@ hr {
   display:flex;
   justify-content:center;
   align-items:center;
-  height:21rem;
+  height:18rem;
 }
 
 .card-margin {
@@ -142,6 +151,8 @@ hr {
 }
 
 .card {
+  display: flex;
+  cursor: pointer;
   box-shadow:0 4px 8px 0 rgba(0,0,0,0.1);
 }
 
@@ -200,4 +211,7 @@ hr {
 .icon-footer:hover {
   background-color:rgb(255,215,0);
   box-shadow:0 0px 10px 0 rgba(0,0,0,0.3);
+}
+.head{
+  position: fixed;
 }
